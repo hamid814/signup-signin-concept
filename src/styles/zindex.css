@@ -1,0 +1,11 @@
+#layer {
+  z-index: 20;
+}
+
+#layer .background {
+  z-index: 19;
+}
+
+#layer button {
+  z-index: 21;
+}
