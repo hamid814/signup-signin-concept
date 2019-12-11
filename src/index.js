@@ -2,6 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
 
+import State from './context/State';
+import Context from './context/Context';
+
 import './index.css';
 
 function App() {
@@ -12,7 +15,15 @@ function App() {
   );
 }
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const StateContainer = () => {
+  return (
+    <State>
+      <App />
+    </State>
+  )
+}
+
+ReactDOM.render(<StateContainer />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
