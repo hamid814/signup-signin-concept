@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-size: 100%;
   transition: 0.3s;
+  outline: none;
 }
 
 body {

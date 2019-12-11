@@ -1,23 +1,97 @@
 #layer {
   position: absolute;
   top: 0;
-  left: 60vw;
-  /* left: 0; */
   width: 40vw;
   height: 100vh;
   background: #0000;
   transition: 1s;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#layer.signin {
+  left: 60vw;
+}
+
+#layer.signup {
+  left: 0;
 }
 
 #layer .background {
   position: absolute;
   top: 0;
-  left: -60vw;
-  /* left: 0; */
   width: 100vw;
   height: 100vh;
   transition: 1s;
-  background-image: linear-gradient(to top right, rgb(13, 189, 42), rgb(0, 102, 255));
-  background: #3337;
+  background-image: linear-gradient(to top right, rgb(13, 189, 42), rgb(61, 136, 248));
+}
+
+#layer .background.signin {
+  left: -60vw;
+}
+
+#layer .background.signup {
+  left: 0;
+}
+
+.shape.triangle1 {
+  width: 0px;
+  height: 0px;
+  border: 90px solid #ccc3;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  background: transparent;
+  margin-left: 60vw;
+  transform: rotateZ(63deg);
+}
+
+.shape.triangle2 {
+  width: 0px;
+  height: 0px;
+  border: 80px solid #ccc3;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  background: transparent;
+  margin-left: 10vw;
+  transform: rotateZ(-63deg);
+}
+
+.shape.circle {
+  width: 0px;
+  height: 0px;
+  border: 190px solid #ccc3;
+  border-radius: 999px;
+  background: transparent;
+  margin-left: -10vw;
+  margin-top: 17vh;
+  transform: rotateZ(13deg);
+}
+
+.shape.square {
+  width: 0px;
+  height: 0px;
+  border: 140px solid #ccc3;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  background: transparent;
+  margin-left: 85vw;
+  margin-top: -100vh;
+  transform: rotateZ(-73deg);
+}
+
+#layer button {
+  position: absolute;
+  background: transparent;
+  border: 1.3px solid #f4f4f4;
+  padding: 14px;
+  text-align: center;
+  width: 260px;
+  letter-spacing: 2.5px;
+  border-radius: 999px;
+  color: #f4f4f4;
 }
