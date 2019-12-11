@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
 
-import Container from './components/Container';
+import Container from './components/layout/Container';
+import Header from './components/layout/Header';
 
 import State from './context/State';
 
@@ -11,6 +12,7 @@ import './index.css';
 function App() {
   return (
     <>
+      <Header />
       <Container />
     </>
   );
