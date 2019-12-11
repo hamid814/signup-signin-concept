@@ -1,9 +1,13 @@
 import React from 'react'
 
+import './layer.css';
+
 const Layer = () => {
   return (
-    <div>
-      
+    <div id='layer'>
+      <div className="background">
+        
+      </div>
     </div>
   )
 }

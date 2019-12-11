@@ -1,0 +1,22 @@
+#layer {
+  position: absolute;
+  top: 0;
+  left: 66vw;
+  left: 0;
+  width: 34vw;
+  height: 100vh;
+  background: #0000;
+  transition: 1s;
+  overflow: hidden;
+}
+
+#layer .background {
+  position: absolute;
+  top: 0;
+  left: -66vw;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  transition: 1s;
+  background-image: linear-gradient(to top right, red, orange);
+}
