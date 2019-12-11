@@ -12,11 +12,11 @@ const Layer = () => {
   }
 
   return (
-    <div id='layer'>
-      <div className="background">
+    <div id='layer' className={`${state}`}>
+      <div className={`background ${state}`}>
 
       </div>
-      <button onClick={onbuttonClick}>
+      <button onClick={onbuttonClick} className={`${state}`}>
         { state }
       </button>
     </div>

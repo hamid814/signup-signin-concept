@@ -1,9 +1,9 @@
 #layer {
   position: absolute;
   top: 0;
-  left: 68vw;
+  left: 60vw;
   /* left: 0; */
-  width: 32vw;
+  width: 40vw;
   height: 100vh;
   background: #0000;
   transition: 1s;
@@ -13,11 +13,11 @@
 #layer .background {
   position: absolute;
   top: 0;
-  left: -68vw;
+  left: -60vw;
   /* left: 0; */
   width: 100vw;
   height: 100vh;
   transition: 1s;
   background-image: linear-gradient(to top right, rgb(13, 189, 42), rgb(0, 102, 255));
-  /* background: #3337; */
+  background: #3337;
 }
