@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
 
+import Container from './components/Container';
+
 import State from './context/State';
 
 import './index.css';
@@ -9,7 +11,7 @@ import './index.css';
 function App() {
   return (
     <>
-      
+      <Container />
     </>
   );
 }
