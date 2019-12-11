@@ -3,15 +3,14 @@ import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
 
 import State from './context/State';
-import Context from './context/Context';
 
 import './index.css';
 
 function App() {
   return (
-    <div>
-      hey!
-    </div>
+    <>
+      
+    </>
   );
 }
 
