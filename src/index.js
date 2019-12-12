@@ -9,6 +9,8 @@ import State from './context/State';
 
 import './index.css';
 import './styles/zindex.css';
+import './styles/keyframes.css';
+import './styles/testSass.scss';
 
 function App() {
   return (
