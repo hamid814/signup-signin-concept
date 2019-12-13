@@ -36,26 +36,6 @@
     animation: layerAnim 1s ease-in-out reverse;
   }
   
-  button {
-    color: #444 !important;
-    border-color: #4440 !important;
-    transition: 2.2s;
-    width: 1000px !important;
-    
-    &.signin {
-      background: #f006 !important;
-    }
-    
-    &.signup {
-      background: #ff06 !important;
-    }
-  }
-
-  .shape {
-    border-color: #4444;
-    background: #4444;
-  }
-
   .background {
     position: absolute;
     top: 0;
@@ -64,18 +44,17 @@
     transition: 0.8s;
     transition-timing-function: ease-in-out;
     transition-delay: 0.1s;
-    background-image: linear-gradient(to 0 right, #44c298, #40abb4);
+    background-image: linear-gradient(to top right, #44c298, #40abb4);
 
     h1, .text {
       color: #e9e8e8;
-      color: #444;
     }
-    
+  
     .content {
-      // border: 1px solid orange;
+      border: 1px solid orange;
       position: relative;
       margin-top: 34vh;
-      
+
       .signin-area {
         width: 35%;
         text-align: center;
@@ -87,7 +66,6 @@
           font-size: 270%;
           font-weight: 400;
           margin-bottom: 2vh;
-          text-shadow: 1px 1px red;
         }
         
         .text {
@@ -107,7 +85,6 @@
           font-size: 270%;
           font-weight: 400;
           margin-bottom: 2vh;
-          text-shadow: 2px 2px yellow;
         }
         
         .text {
@@ -123,7 +100,7 @@
     display: block;
     font-size: 115%;
     background: transparent;
-    border: 1.3px solid #f4f4f4;
+    border: 2px solid #f4f4f4;
     padding: 18px;
     text-align: center;
     width: 260px;
