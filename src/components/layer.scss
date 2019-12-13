@@ -1,7 +1,7 @@
 #layer {
   position: absolute;
   top: 0;
-  width: 40vw;
+  width: 35vw;
   height: 100vh;
   background: #0000;
   transition: 0.8s;
@@ -13,15 +13,15 @@
   justify-content: center;
 
   &.signin {
-    left: 60vw;
+    left: 65vw;
     
     .background {
-      left: -60vw;
+      left: -65vw;
     }
   }
   
   &.layer-signin-anim {
-    animation: hdcbwshdbc 1s ease-in-out;
+    animation: layerAnim 1s ease-in-out;
   }
   
   &.signup {
@@ -33,7 +33,7 @@
   }
   
   &.layer-signup-anim {
-    animation: hdcbwshdbc 1s ease-in-out reverse;
+    animation: layerAnim 1s ease-in-out reverse;
   }
   
   .background {
@@ -41,50 +41,41 @@
     top: 0;
     width: 100vw;
     height: 100vh;
-    transition: 1.2s;
+    transition: 0.8s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.1s;
     background-image: linear-gradient(to top right, #44c298, #40abb4);
 
     h1 {
       color: #e9e8e8;
     }
-  }
-
-  .content {
-    border: 1px solid orange;
-    text-align: center;
-
-    h1 {
-      color: #e9e9e9;
-      font-size: 300%;
-      font-weight: 600;
-    }
-
-    .signin-area {
-      margin-bottom: 20px;
-    }
-
-    .signup-area {
-      margin-bottom: 20px;
+  
+    .content {
+      border: 1px solid orange;
+      // text-align: center;
     }
   }
 
   button {
+    display: block;
+    font-size: 115%;
     background: transparent;
     border: 1.3px solid #f4f4f4;
-    padding: 14px;
+    padding: 18px;
     text-align: center;
     width: 260px;
-    letter-spacing: 2.5px;
+    letter-spacing: 2px;
+    font-weight: 100;
     border-radius: 999px;
     color: #f4f4f4;
     cursor: pointer;
-    margin: 0;
+    margin-top: 22vh;
   }
 }
 
-@keyframes hdcbwshdbc {
+@keyframes layerAnim {
   0% {
-    width: 40vw;
+    width: 35vw;
     left: 0;
   }
   10% {
@@ -94,11 +85,11 @@
     width: 60vw;
   }
   90% {
-    left: 60vw;
+    left: 65vw;
   }
   100% {
-    width: 40vw;
-    left: 60vw;
+    width: 35vw;
+    left: 65vw;
   }
 }
 
@@ -109,18 +100,17 @@
   &.circle {
     width: 0px;
     height: 0px;
-    border: 190px solid #ccc3;
+    border: 190px solid orange;
     border-radius: 999px;
     background: transparent;
     left: -10vw;
     top: 67vh;
-    transform: rotateZ(13deg);
   }
   
   &.square {
     width: 0px;
     height: 0px;
-    border: 20px solid #ccc3;
+    border: 20px solid orange;
     background: transparent;
     left: 25vw;
     top: 12vh;
@@ -130,7 +120,7 @@
   &.triangle {
     width: 0px;
     height: 0px;
-    border: 20px solid #ccc3;
+    border: 20px solid orange;
     background: transparent;
     border-top-color: transparent;
     border-right-color: transparent;
@@ -139,7 +129,7 @@
     border-bottom-width: 82px;
     border-left-width: 60px;
     border-right-width: 75px;
-    left: 37vw;
+    left: 33vw;
     top: 37vh;
     transform: rotateZ(30deg);
   }
@@ -147,8 +137,8 @@
   &.rectangle {
     width: 50px;
     height: 24px;
-    background: #ccc3;
-    left: 32vw;
+    background: orange;
+    left: 27vw;
     top: 72vh;
     transform: rotateZ(35deg);
   }
@@ -156,7 +146,7 @@
   &.square2 {
     width: 70px;
     height: 70px;
-    background: #ccc3;
+    background: orange;
     left: 52vw;
     top: 32vh;
     transform: rotateZ(-35deg);
@@ -165,7 +155,7 @@
   &.rectangle2 {
     width: 50px;
     height: 24px;
-    background: #ccc3;
+    background: orange;
     left: 66vw;
     top: 32vh;
     transform: rotateZ(17deg);
@@ -174,7 +164,7 @@
   &.triangle2 {
     width: 0px;
     height: 0px;
-    border: 20px solid #ccc3;
+    border: 20px solid orange;
     background: transparent;
     border-top-color: transparent;
     border-right-color: transparent;
@@ -183,15 +173,15 @@
     border-bottom-width: 240px;
     border-left-width: 180px;
     border-right-width: 225px;
-    left: 85vw;
-    top: -8vh;
+    left: 83vw;
+    top: -10vh;
     transform: rotateZ(140deg);
   }
 
   &.triangle3 {
     width: 0px;
     height: 0px;
-    border: 20px solid #ccc3;
+    border: 20px solid orange;
     background: transparent;
     border-top-color: transparent;
     border-right-color: transparent;
@@ -208,7 +198,7 @@
   &.circle2 {
     width: 0px;
     height: 0px;
-    border: 30px solid #ccc3;
+    border: 30px solid orange;
     background: transparent;
     border-radius: 9999px;
     left: 67vw;
@@ -218,9 +208,9 @@
   &.square3 {
     width: 0px;
     height: 0px;
-    border: 27px solid #ccc3;
+    border: 20px solid orange;
     background: transparent;
-    left: 96vw;
+    left: 93vw;
     top: 54vh;
     transform: rotateZ(-165deg);
   }

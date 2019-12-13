@@ -1,8 +1,46 @@
+$width: 96vw;
+$height: 96vh;
+
 #app-container {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: $width;
+  height: $height;
   background: #efefef;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 2vh;
+  margin-left: 2vw;
+  border-radius: 20px;
+  
+}
+
+.back-circle {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border: 190px solid #f9d046;
+  border-radius: 999px;
+  background: transparent;
+  left: -8vw;
+  top: 69vh;
+}
+
+.back-triangle {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border: 20px solid #de636a;
+  background: transparent;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  border-top-width: 180px;
+  border-bottom-width: 240px;
+  border-left-width: 180px;
+  border-right-width: 225px;
+  left: 85vw;
+  top: -8vh;
+  transform: rotateZ(140deg);
 }

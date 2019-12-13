@@ -6,9 +6,17 @@ import './container.scss';
 
 const Container = () => {
   return (
-    <div id='app-container'>
-      <Layer />
-    </div>
+    <>
+      <div id='app-container'>
+        <Layer />
+      </div>
+      <div className='back-circle'>
+      
+      </div>
+      <div className='back-triangle'>
+      
+      </div>
+    </>
   )
 }
 

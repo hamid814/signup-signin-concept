@@ -25,6 +25,24 @@ const Layer = () => {
   return (
     <div id='layer' className={`${state} ${animating && `layer-${state}-anim`}`}>
       <div className='background'>
+        <div className='content'>
+          <div className='signin-area'>
+            <h1>
+              Welcome Back!
+            </h1>
+            <div className="text">
+              to keep connected with us please login with your personal info
+            </div>
+          </div>
+          <div className='signup-area'>
+            <h1>
+              Hello, Friend!
+            </h1>
+            <div className="text">
+              enter your personal details and start journy with us
+            </div>
+          </div>
+        </div>
         <div className='shape circle'>
 
         </div>
@@ -56,28 +74,16 @@ const Layer = () => {
         
         </div>
       </div>
-      <div className='content'>
-        <div className='signin-area'>
-          <h1>
-            Welcome Back!
-          </h1>
-        </div>
-        <div className='signup-area'>
-          <h1>
-            Hello, Friend!
-          </h1>
-        </div>
-        <button onClick={onbuttonClick} className={`${state}`}>
-          {
-            state === 'signin'
-              && 'sign up'
-          }
-          {
-            state === 'signup'
-              && 'sign in'
-          }
-        </button>
-      </div>
+      <button onClick={onbuttonClick} className={`${state}`}>
+        {
+          state === 'signin'
+            && 'sign up'
+        }
+        {
+          state === 'signup'
+            && 'sign in'
+        }
+      </button>
     </div>
   )
 }
