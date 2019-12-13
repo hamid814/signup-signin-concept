@@ -30,7 +30,7 @@ const Layer = () => {
             <h1>
               Welcome Back!
             </h1>
-            <div className="text">
+            <div className='text'>
               to keep connected with us please login with your personal info
             </div>
           </div>
@@ -38,7 +38,7 @@ const Layer = () => {
             <h1>
               Hello, Friend!
             </h1>
-            <div className="text">
+            <div className='text'>
               enter your personal details and start journy with us
             </div>
           </div>
