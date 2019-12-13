@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 
 import Context from '../context/Context'; 
 
@@ -7,6 +7,15 @@ import './layer.scss';
 const Layer = () => {
   const { state, setState } = useContext(Context)
 
+  const [animating, setAnimating] = useState(false)
+
+  useEffect(() => {
+    setAnimating(true)
+    setTimeout(() => {
+      setAnimating(false)
+    }, 1000);
+  }, [state])
+
   const onbuttonClick = () => {
     state === 'signin'
       ? setState('signup')
@@ -14,7 +23,7 @@ const Layer = () => {
   }
 
   return (
-    <div id='layer' className={`${state}`}>
+    <div id='layer' className={`${state} ${animating && `layer-${state}-anim`}`}>
       <div className='background'>
         <div className='shape circle'>
 
