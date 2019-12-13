@@ -145,4 +145,58 @@
     top: 32vh;
     transform: rotateZ(17deg);
   }
+  
+  &.triangle2 {
+    width: 0px;
+    height: 0px;
+    border: 20px solid #ccc3;
+    background: transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-top-width: 180px;
+    border-bottom-width: 240px;
+    border-left-width: 180px;
+    border-right-width: 225px;
+    left: 85vw;
+    top: -8vh;
+    transform: rotateZ(140deg);
+  }
+
+  &.triangle3 {
+    width: 0px;
+    height: 0px;
+    border: 20px solid #ccc3;
+    background: transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-top-width: 60px;
+    border-bottom-width: 100px;
+    border-left-width: 60px;
+    border-right-width: 75px;
+    left: 83vw;
+    top: 87vh;
+    transform: rotateZ(165deg);
+  }
+
+  &.circle2 {
+    width: 0px;
+    height: 0px;
+    border: 30px solid #ccc3;
+    background: transparent;
+    border-radius: 9999px;
+    left: 67vw;
+    top: 70vh;
+  }
+
+  &.square3 {
+    width: 0px;
+    height: 0px;
+    border: 27px solid #ccc3;
+    background: transparent;
+    left: 96vw;
+    top: 54vh;
+    transform: rotateZ(-165deg);
+  }
 }

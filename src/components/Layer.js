@@ -50,10 +50,10 @@ const Layer = () => {
         <div className="shape triangle2">
         
         </div>
-        <div className="shape triangle2">
+        <div className="shape triangle3">
         
         </div>
-        <div className="shape square2">
+        <div className="shape square3">
         
         </div>
       </div>
