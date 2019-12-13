@@ -13,7 +13,7 @@
   justify-content: center;
 }
 
-.layer-signin {
+#layer.signin {
   left: 60vw;
   animation: hdcbwshdbc 1s ease-in-out;
   /* animation-delay: 0.2s; */
@@ -25,13 +25,13 @@
     left: 0;
   }
   10% {
-    /* left: 0vw; */
+    left: 0vw;
   }
   50% {
-    width: 70vw;
+    width: 60vw;
   }
   90% {
-    /* left: 60vw; */
+    left: 60vw;
   }
   100% {
     width: 40vw;
@@ -39,7 +39,7 @@
   }
 }
 
-.layer-signup {
+#layer.signup {
   left: 0;
   animation: hdcbwshdbc 1s ease-in-out reverse;
 }
@@ -53,11 +53,11 @@
   background-image: linear-gradient(to top right, #44c298, #40abb4);
 }
 
-#layer .background.signin {
+#layer.signin .background {
   left: -60vw;
 }
 
-#layer .background.signup {
+#layer.signup .background {
   left: 0;
 }
 

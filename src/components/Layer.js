@@ -14,8 +14,8 @@ const Layer = () => {
   }
 
   return (
-    <div id='layer' className={`layer-${state}`}>
-      <div className={`background ${state}`}>
+    <div id='layer' className={`${state}`}>
+      <div className='background'>
         <div className='shape triangle1'>
 
         </div>
