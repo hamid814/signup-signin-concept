@@ -1,7 +1,6 @@
 #layer {
   position: absolute;
   top: -2vh;
-  left: -2vw;
   width: 35vw;
   height: 100vh;
   background: #0000;
@@ -14,10 +13,10 @@
   justify-content: center;
 
   &.signin {
-    left: 65vw;
+    left: 63vw;
     
     .background {
-      left: -65vw;
+      left: -63vw;
     }
   }
   
@@ -26,10 +25,10 @@
   }
   
   &.signup {
-    left: 0;
+    left: -2vw;
     
     .background {
-      left: 0;
+      left: -2vw;
     }
   }
   
@@ -37,6 +36,26 @@
     animation: layerAnim 1s ease-in-out reverse;
   }
   
+  button {
+    color: #444 !important;
+    border-color: #4440 !important;
+    transition: 2.2s;
+    width: 1000px !important;
+    
+    &.signin {
+      background: #f006 !important;
+    }
+    
+    &.signup {
+      background: #ff06 !important;
+    }
+  }
+
+  .shape {
+    border-color: #4444;
+    background: #4444;
+  }
+
   .background {
     position: absolute;
     top: 0;
@@ -45,17 +64,18 @@
     transition: 0.8s;
     transition-timing-function: ease-in-out;
     transition-delay: 0.1s;
-    background-image: linear-gradient(to top right, #44c298, #40abb4);
+    background-image: linear-gradient(to 0 right, #44c298, #40abb4);
 
     h1, .text {
       color: #e9e8e8;
+      color: #444;
     }
-  
+    
     .content {
-      border: 1px solid orange;
+      // border: 1px solid orange;
       position: relative;
-      margin-top: 270px;
-
+      margin-top: 34vh;
+      
       .signin-area {
         width: 35%;
         text-align: center;
@@ -67,10 +87,11 @@
           font-size: 270%;
           font-weight: 400;
           margin-bottom: 2vh;
+          text-shadow: 1px 1px red;
         }
         
         .text {
-          width: 52%;
+          width: 60%;
           margin: 0 auto;
           line-height: 3.5vh;
         }
@@ -80,15 +101,17 @@
         width: 35%;
         text-align: center;
         margin-bottom: 2vh;
+        margin-left: 2vw;
         
         h1 {
           font-size: 270%;
           font-weight: 400;
           margin-bottom: 2vh;
+          text-shadow: 2px 2px yellow;
         }
         
         .text {
-          width: 45%;
+          width: 50%;
           margin: 0 auto;
           line-height: 3.5vh;
         }
@@ -116,20 +139,20 @@
 @keyframes layerAnim {
   0% {
     width: 35vw;
-    left: 0;
+    left: -2vw;
   }
   10% {
-    left: 0vw;
+    left: -2vw;
   }
   50% {
     width: 60vw;
   }
   90% {
-    left: 65vw;
+    left: 63vw;
   }
   100% {
     width: 35vw;
-    left: 65vw;
+    left: 63vw;
   }
 }
 

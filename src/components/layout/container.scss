@@ -23,8 +23,9 @@ $height: 96vh;
   border: 190px solid #f9d046;
   border-radius: 999px;
   background: transparent;
-  left: -8vw;
+  left: -12vw;
   top: 67vh;
+  transition: 2.2s;
 }
 
 .back-triangle {
@@ -33,9 +34,9 @@ $height: 96vh;
   height: 0px;
   border: 20px solid #de636a;
   background: transparent;
-  border-top-color: transparent;
-  border-right-color: transparent;
-  border-left-color: transparent;
+  border-top-color: transparent !important;
+  border-right-color: transparent !important;
+  border-left-color: transparent !important;
   border-top-width: 180px;
   border-bottom-width: 240px;
   border-left-width: 180px;
@@ -43,4 +44,12 @@ $height: 96vh;
   left: 85vw;
   top: -10vh;
   transform: rotateZ(140deg);
+  transition: 2.2s;
+}
+
+.red {
+  border-color: #f00c;
+}
+.yellow {
+  border-color: #ff0c;
 }
