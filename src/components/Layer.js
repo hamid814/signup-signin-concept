@@ -16,17 +16,27 @@ const Layer = () => {
   return (
     <div id='layer' className={`${state}`}>
       <div className='background'>
-        <div className='shape triangle1'>
-
+        <div className='signin-area'>
+          <h1>
+            Welcome Back!
+          </h1>
         </div>
-        <div className='shape triangle2'>
-
+        <div className='signup-area'>
+          <h1>
+            Hello, Friend!
+          </h1>
         </div>
         <div className='shape circle'>
 
         </div>
-        <div className='shape square'>
-
+        <div className="shape square">
+        
+        </div>
+        <div className="shape triangle">
+        
+        </div>
+        <div className="shape rectangle">
+        
         </div>
       </div>
       <button onClick={onbuttonClick} className={`${state}`}>

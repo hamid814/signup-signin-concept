@@ -11,12 +11,50 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
 
-#layer.signin {
-  left: 60vw;
-  animation: hdcbwshdbc 1s ease-in-out;
-  /* animation-delay: 0.2s; */
+  &.signin {
+    left: 60vw;
+    animation: hdcbwshdbc 1s ease-in-out;
+
+    .background {
+      left: -60vw;
+    }
+  }
+  
+  &.signup {
+    left: 0;
+    animation: hdcbwshdbc 1s ease-in-out reverse;
+    
+    .background {
+      left: 0;
+    }
+  }
+  
+  .background {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    transition: 1s;
+    background-image: linear-gradient(to top right, #44c298, #40abb4);
+
+    h1 {
+      color: #e9e8e8;
+    }
+  }
+
+  button {
+    position: absolute;
+    background: transparent;
+    border: 1.3px solid #f4f4f4;
+    padding: 14px;
+    text-align: center;
+    width: 260px;
+    letter-spacing: 2.5px;
+    border-radius: 999px;
+    color: #f4f4f4;
+    cursor: pointer;
+  }
 }
 
 @keyframes hdcbwshdbc {
@@ -39,90 +77,58 @@
   }
 }
 
-#layer.signup {
-  left: 0;
-  animation: hdcbwshdbc 1s ease-in-out reverse;
-}
-
-#layer .background {
-  position: absolute;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  transition: 1s;
-  background-image: linear-gradient(to top right, #44c298, #40abb4);
-}
-
-#layer.signin .background {
-  left: -60vw;
-}
-
-#layer.signup .background {
-  left: 0;
-}
 
 .shape {
   position: absolute;
-}
 
-.shape.triangle1 {
-  width: 0px;
-  height: 0px;
-  border: 90px solid #ccc3;
-  border-top-color: transparent;
-  border-left-color: transparent;
-  border-right-color: transparent;
-  background: transparent;
-  top: 13vh;
-  left: 60vw;
-  transform: rotateZ(63deg);
-}
-
-.shape.triangle2 {
-  width: 0px;
-  height: 0px;
-  border: 80px solid #ccc3;
-  border-left-color: transparent;
-  border-top-color: transparent;
-  border-right-color: transparent;
-  background: transparent;
-  top: 20vh;
-  left: 10vw;
-  transform: rotateZ(-63deg);
-}
-
-.shape.circle {
-  width: 0px;
-  height: 0px;
-  border: 190px solid #ccc3;
-  border-radius: 999px;
-  background: transparent;
-  left: -10vw;
-  top: 67vh;
-  transform: rotateZ(13deg);
-}
-
-.shape.square {
-  width: 0px;
-  height: 0px;
-  border: 140px solid #ccc3;
-  border-top-color: transparent;
-  border-right-color: transparent;
-  background: transparent;
-  top: -17vh;
-  left: 83vw;
-  transform: rotateZ(-73deg);
-}
-
-#layer button {
-  position: absolute;
-  background: transparent;
-  border: 1.3px solid #f4f4f4;
-  padding: 14px;
-  text-align: center;
-  width: 260px;
-  letter-spacing: 2.5px;
-  border-radius: 999px;
-  color: #f4f4f4;
-  cursor: pointer;
+  &.circle {
+    width: 0px;
+    height: 0px;
+    border: 190px solid #ccc3;
+    border-radius: 999px;
+    background: transparent;
+    left: -10vw;
+    top: 67vh;
+    transform: rotateZ(13deg);
+  }
+  
+  &.square {
+    width: 0px;
+    height: 0px;
+    border: 20px solid #ccc3;
+    background: transparent;
+    left: 25vw;
+    top: 12vh;
+    transform: rotateZ(38deg);
+  }
+  
+  &.triangle {
+    width: 0px;
+    height: 0px;
+    border: 20px solid #ccc3;
+    background: transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-top-width: 60px;
+    border-bottom-width: 82px;
+    border-left-width: 60px;
+    border-right-width: 75px;
+    left: 37vw;
+    top: 24vh;
+    transform: rotateZ(30deg);
+  }
+  
+  &.rectangle {
+    width: 50px;
+    height: 24px;
+    background: #ccc3;
+    border-top-width: 60px;
+    border-bottom-width: 82px;
+    border-left-width: 60px;
+    border-right-width: 75px;
+    left: 32vw;
+    top: 72vh;
+    transform: rotateZ(35deg);
+  }
 }
