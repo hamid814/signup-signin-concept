@@ -38,6 +38,24 @@ const Layer = () => {
         <div className="shape rectangle">
         
         </div>
+        <div className="shape square2">
+        
+        </div>
+        <div className="shape rectangle2">
+        
+        </div>
+        <div className="shape circle2">
+        
+        </div>
+        <div className="shape triangle2">
+        
+        </div>
+        <div className="shape triangle2">
+        
+        </div>
+        <div className="shape square2">
+        
+        </div>
       </div>
       <button onClick={onbuttonClick} className={`${state}`}>
         {

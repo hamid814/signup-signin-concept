@@ -115,7 +115,7 @@
     border-left-width: 60px;
     border-right-width: 75px;
     left: 37vw;
-    top: 24vh;
+    top: 37vh;
     transform: rotateZ(30deg);
   }
   
@@ -123,12 +123,26 @@
     width: 50px;
     height: 24px;
     background: #ccc3;
-    border-top-width: 60px;
-    border-bottom-width: 82px;
-    border-left-width: 60px;
-    border-right-width: 75px;
     left: 32vw;
     top: 72vh;
     transform: rotateZ(35deg);
+  }
+  
+  &.square2 {
+    width: 70px;
+    height: 70px;
+    background: #ccc3;
+    left: 52vw;
+    top: 32vh;
+    transform: rotateZ(-35deg);
+  }
+  
+  &.rectangle2 {
+    width: 50px;
+    height: 24px;
+    background: #ccc3;
+    left: 66vw;
+    top: 32vh;
+    transform: rotateZ(17deg);
   }
 }
