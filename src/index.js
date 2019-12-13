@@ -8,7 +8,7 @@ import Header from './components/layout/Header';
 import State from './context/State';
 
 import './index.css';
-import './styles/zindex.css';
+import './styles/zindex.scss';
 import './styles/keyframes.css';
 
 function App() {

@@ -13,7 +13,7 @@
   justify-content: center;
 
   &.signin {
-    left: 60vw;
+    // left: 60vw;
     animation: hdcbwshdbc 1s ease-in-out;
 
     .background {
@@ -22,8 +22,9 @@
   }
   
   &.signup {
-    left: 0;
+    // left: 0;
     animation: hdcbwshdbc 1s ease-in-out reverse;
+    border: 1px solid red;
     
     .background {
       left: 0;
@@ -35,7 +36,7 @@
     top: 0;
     width: 100vw;
     height: 100vh;
-    transition: 1s;
+    transition: 1.2s;
     background-image: linear-gradient(to top right, #44c298, #40abb4);
 
     h1 {
@@ -43,8 +44,20 @@
     }
   }
 
+  .content {
+    color: #fff;
+    border: 1px solid red;
+
+    .signin-area {
+      margin-bottom: 20px;
+    }
+
+    .signup-area {
+      margin-bottom: 20px;
+    }
+  }
+
   button {
-    position: absolute;
     background: transparent;
     border: 1.3px solid #f4f4f4;
     padding: 14px;
@@ -54,6 +67,7 @@
     border-radius: 999px;
     color: #f4f4f4;
     cursor: pointer;
+    margin: 0;
   }
 }
 

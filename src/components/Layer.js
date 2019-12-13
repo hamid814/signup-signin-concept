@@ -16,6 +16,38 @@ const Layer = () => {
   return (
     <div id='layer' className={`${state}`}>
       <div className='background'>
+        <div className='shape circle'>
+
+        </div>
+        <div className='shape square'>
+        
+        </div>
+        <div className='shape triangle'>
+        
+        </div>
+        <div className='shape rectangle'>
+        
+        </div>
+        <div className='shape square2'>
+        
+        </div>
+        <div className='shape rectangle2'>
+        
+        </div>
+        <div className='shape circle2'>
+        
+        </div>
+        <div className='shape triangle2'>
+        
+        </div>
+        <div className='shape triangle3'>
+        
+        </div>
+        <div className='shape square3'>
+        
+        </div>
+      </div>
+      <div className='content'>
         <div className='signin-area'>
           <h1>
             Welcome Back!
@@ -26,47 +58,17 @@ const Layer = () => {
             Hello, Friend!
           </h1>
         </div>
-        <div className='shape circle'>
-
-        </div>
-        <div className="shape square">
-        
-        </div>
-        <div className="shape triangle">
-        
-        </div>
-        <div className="shape rectangle">
-        
-        </div>
-        <div className="shape square2">
-        
-        </div>
-        <div className="shape rectangle2">
-        
-        </div>
-        <div className="shape circle2">
-        
-        </div>
-        <div className="shape triangle2">
-        
-        </div>
-        <div className="shape triangle3">
-        
-        </div>
-        <div className="shape square3">
-        
-        </div>
+        <button onClick={onbuttonClick} className={`${state}`}>
+          {
+            state === 'signin'
+              && 'sign up'
+          }
+          {
+            state === 'signup'
+              && 'sign in'
+          }
+        </button>
       </div>
-      <button onClick={onbuttonClick} className={`${state}`}>
-        {
-          state === 'signin'
-            && 'sign up'
-        }
-        {
-          state === 'signup'
-            && 'sign in'
-        }
-      </button>
     </div>
   )
 }
