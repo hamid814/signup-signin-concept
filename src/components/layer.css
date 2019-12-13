@@ -13,7 +13,7 @@
   justify-content: center;
 }
 
-#layer.signin {
+.layer-signin {
   left: 60vw;
   animation: hdcbwshdbc 1s ease-in-out;
   /* animation-delay: 0.2s; */
@@ -39,7 +39,7 @@
   }
 }
 
-#layer.signup {
+.layer-signup {
   left: 0;
   animation: hdcbwshdbc 1s ease-in-out reverse;
 }

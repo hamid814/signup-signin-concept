@@ -14,7 +14,7 @@ const Layer = () => {
   }
 
   return (
-    <div id='layer' className={`${state}`}>
+    <div id='layer' className={`layer-${state}`}>
       <div className={`background ${state}`}>
         <div className='shape triangle1'>
 
