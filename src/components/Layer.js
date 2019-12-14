@@ -26,20 +26,20 @@ const Layer = () => {
     <div id='layer' className={`${state} ${animating && `layer-${state}-anim`}`}>
       <div className='background'>
         <div className='content'>
-          <div className='signin-area'>
-            <h1>
-              Welcome Back!
-            </h1>
-            <div className='text'>
-              to keep connected with us please login with your personal info
-            </div>
-          </div>
-          <div className='signup-area'>
+          <div className={`signin-area ${state === 'signin' && 'active'}`}>
             <h1>
               Hello, Friend!
             </h1>
             <div className='text'>
               enter your personal details and start journy with us
+            </div>
+          </div>
+          <div className={`signup-area ${state === 'signup' && 'active'}`}>
+            <h1>
+              Welcome Back!
+            </h1>
+            <div className='text'>
+              to keep connected with us please login with your personal info
             </div>
           </div>
         </div>

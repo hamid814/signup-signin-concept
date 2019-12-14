@@ -49,18 +49,23 @@
     h1, .text {
       color: #e9e8e8;
     }
-  
+    
     .content {
-      border: 1px solid orange;
+      // border: 1px solid orange;
       position: relative;
       margin-top: 34vh;
-
+      
       .signin-area {
         width: 35%;
         text-align: center;
         margin-bottom: 2vh;
         position: absolute;
-        right: 2vw;
+        right: 0;
+        transition: 0.5s;
+        
+        &.active {
+          right: 2vw;
+        }
         
         h1 {
           font-size: 270%;
@@ -69,7 +74,7 @@
         }
         
         .text {
-          width: 60%;
+          width: 210px;
           margin: 0 auto;
           line-height: 3.5vh;
         }
@@ -79,7 +84,13 @@
         width: 35%;
         text-align: center;
         margin-bottom: 2vh;
-        margin-left: 2vw;
+        position: absolute;
+        left: 0;
+        transition: 0.5s;
+        
+        &.active {
+          left: 2vw;
+        }
         
         h1 {
           font-size: 270%;
@@ -88,7 +99,7 @@
         }
         
         .text {
-          width: 50%;
+          width: 250px;
           margin: 0 auto;
           line-height: 3.5vh;
         }
