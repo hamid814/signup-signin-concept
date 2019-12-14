@@ -19,7 +19,7 @@
     "eject": "react-scripts eject",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "http://hamid814.github.io/signin-siginup-concept",
+  "homepage": "https://hamid814.github.io/signup-signin-concept/",
   "eslintConfig": {
     "extends": "react-app"
   },
