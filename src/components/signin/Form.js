@@ -8,17 +8,17 @@ const SigninForm = () => {
   const text = <div className='form-desc'>or use your email for registration:</div>
 
   const nameInput = <div className='form-group'>
-                      <span className='icon'>N</span>
+                      <span className='icon'><i class='fa fa-user-o'></i></span>
                       <input type='text' placeholder='name' readOnly />
                     </div>
 
   const emailInput = <div className='form-group'>
-                      <span className='icon'>E</span>
+                      <span className='icon'><i class='fa fa-envelope-o'></i></span>
                       <input type='text' placeholder='Email' readOnly />
                      </div>
 
   const passwordInput = <div className='form-group'>
-                          <span className='icon'>P</span>
+                          <span className='icon'><i class='fa fa-lock'></i></span>
                           <input type='password' placeholder='password' readOnly />
                         </div>
 
