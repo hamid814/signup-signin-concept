@@ -6,7 +6,10 @@
   top: -2vh;
   transition: 1s;
   transition-delay: .1s;
-  background: #3338;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
   &.signup {
     left: 33vw;
