@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Layer from '../Layer';
+import Layer from './Layer';
 
 import './container.scss';
 

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react'
 
-import Context from '../context/Context'; 
+import Context from '../../context/Context'; 
 
 import './layer.scss';
 
@@ -77,14 +77,14 @@ const Layer = () => {
         </div>
       </div>
       <button onClick={onButtonClick} className={`${animating && `button-${state}-anim`}`}>
-        {
-          state === 'signin'
-            && 'sign up'
-        }
-        {
-          state === 'signup'
-            && 'sign in'
-        }
+        <div className={`text ${state}`}>
+          <div className='signin-text'>
+            sign in
+          </div>
+          <div className='signup-text'>
+            sign up
+          </div>
+        </div>
       </button>
     </div>
   )

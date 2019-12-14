@@ -109,25 +109,66 @@
 
   button {
     display: block;
+    width: 260px;
+    height: 60px;
     font-size: 115%;
     background: transparent;
     border: 2px solid #f4f4f4;
-    padding: 18px;
+    // padding: 18px;
     text-align: center;
-    width: 260px;
     letter-spacing: 2px;
     font-weight: 100;
     border-radius: 999px;
     color: #f4f4f4;
     cursor: pointer;
     margin-top: 22vh;
+    position: relative;
+    overflow: hidden;
 
     &.button-signin-anim {
       animation: jhfskjvkshfv 1s ease-in-out;
     }
     
     &.button-signup-anim {
-      color: red !important;
+      animation: jhfskjvkshfv 1s ease-in-out;
+    }
+
+    .text {
+      // border: 1px solid black;
+      width: 260px;
+      height: 26px;
+      position: absolute;
+      top: 17px;
+      transition: 1s;
+      transition-timing-function: ease-in-out;
+      
+      &.signin {
+        left: -90px;
+
+        .signin-text {
+          opacity: 0;
+        }
+      }
+      
+      &.signup {
+        left: 90px;
+        
+        .signup-text {
+          opacity: 0;
+        }
+      }
+
+      .signin-text {
+        float: left;
+        width: 80px;
+        // border: 1px solid red;
+      }
+      
+      .signup-text {
+        float: right;
+        width: 80px;
+        // border: 1px solid red;
+      }
     }
   }
 }
