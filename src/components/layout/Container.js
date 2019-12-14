@@ -1,14 +1,16 @@
 import React from 'react'
 
 import Layer from './Layer';
+import Form from './Form';
 
-import './container.scss';
+import './styles/container.scss';
 
 const Container = () => {
   return (
     <>
       <div id='app-container'>
         <Layer />
+        <Form />
       </div>
       <div className='back-circle'>
       

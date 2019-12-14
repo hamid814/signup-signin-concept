@@ -2,7 +2,7 @@ import React, { useState, useEffect, useContext } from 'react'
 
 import Context from '../../context/Context'; 
 
-import './layer.scss';
+import './styles/layer.scss';
 
 const Layer = () => {
   const { state, setState } = useContext(Context)
