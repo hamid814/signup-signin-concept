@@ -1,9 +1,13 @@
 import React from 'react'
 
+import './styles/social.scss';
+
 const Social = () => {
   return (
-    <div>
-      
+    <div id='social-icons'>
+      <div className='icon'></div>
+      <div className='icon'></div>
+      <div className='icon'></div>
     </div>
   )
 }

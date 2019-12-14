@@ -1,11 +1,17 @@
-import React from 'react'
+import React, { useState, useContext } from 'react'
 
-import './styles/Form.scss';
+import Social from './Social';
+
+import Context from '../../context/Context';
+
+import './styles/form.scss';
 
 const Form = () => {
+  const { state } = useContext(Context)
+  
   return (
-    <div>
-      
+    <div id='form' className={`${state}`}>
+      <Social />
     </div>
   )
 }
