@@ -1,5 +1,4 @@
 #form {
-  border: 1px solid red;
   position: absolute;
   width: 65vw;
   height: 100vh;
@@ -17,5 +16,19 @@
   
   &.signin {
     left: -2vw;
+  }
+  
+  button {
+    border: none;
+    border-radius: 9999px;
+    color: #f4f4f4;
+    width: 260px;
+    height: 60px;
+    font-size: 115%;
+    background-image: linear-gradient(to top right, #44c298, #40abb4);
+    cursor: pointer;
+    margin: {
+      top: 30px;
+    }
   }
 }

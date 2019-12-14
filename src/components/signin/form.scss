@@ -4,18 +4,24 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin: {
+    bottom: 10px;
+  } 
 }
 
 .form-desc {
   font-size: 90%;
   color: #444a;
+  margin: {
+    bottom: 20px;
+  }
 }
 
 .form-group {
-  background: #f4f8f7;
-  width: 350px;
+  background: darken(#f4f8f7, 2%);
+  width: 420px;
   height: 45px;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   text-align: center;
   display: flex;
   padding: 7px;

@@ -28,10 +28,13 @@ const SigninForm = () => {
     { passwordInput }
   </div>
 
+  const buttonText = <div>SIGN UP</div>
+
   return {
     header,
     text,
-    inputs
+    inputs,
+    buttonText
   }
 }
 
