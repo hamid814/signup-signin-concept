@@ -1,10 +1,15 @@
 #alert {
   position: absolute;
-  top: 40px;
+  top: 30px;
   right: 40px;
-  width: 300px;
-  height: 100px;
+  width: 310px;
+  height: 80px;
   transition: 0.5s;
+  background: rgba(206, 179, 29, 0.95);
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 9999;
+  text-align: justify;
   
   &.active {
     opacity: 1;

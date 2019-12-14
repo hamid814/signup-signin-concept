@@ -9,7 +9,7 @@ import Context from '../../context/Context';
 import './styles/form.scss';
 
 const Form = () => {
-  const { state } = useContext(Context)
+  const { state, setAlert } = useContext(Context)
 
   const [FormData, setFormData] = useState(SignupForm())
 
@@ -27,6 +27,10 @@ const Form = () => {
     }, 500);
   }, [state])
 
+  const onButtonClick = () => {
+    setAlert()
+  }
+
   return (
     <div id='form' className={`${state}`}>
       {
@@ -39,7 +43,7 @@ const Form = () => {
       {
         FormData.inputs
       }
-      <button>
+      <button onClick={onButtonClick}>
         {
           FormData.buttonText
         }

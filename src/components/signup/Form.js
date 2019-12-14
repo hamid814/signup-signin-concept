@@ -9,12 +9,12 @@ const SigninForm = () => {
 
   const emailInput = <div className='form-group'>
                       <span className='icon'>E</span>
-                      <input type='text' placeholder='Emial'/>
+                      <input type='text' placeholder='Emial' readOnly />
                      </div>
 
   const passwordInput = <div className='form-group'>
                           <span className='icon'>P</span>
-                          <input type='password' placeholder='password'/>
+                          <input type='password' placeholder='password' readOnly />
                         </div>
 
   const inputs = <div>

@@ -4,8 +4,8 @@ import Reducer from './Reducer';
 
 const State = props => {
   const initialState = {
-    // state: 'signin',
     state: 'signup',
+    alertState: false,
   };
 
   const [state, dispatch] = useReducer(Reducer, initialState);
@@ -18,11 +18,27 @@ const State = props => {
     });
   };
 
+  const setAlert = () => {
+    dispatch({
+      type: 'set-alert-state',
+      payload: true
+    })
+
+    setTimeout(() => {
+      dispatch({
+        type: 'set-alert-state',
+        payload: false
+      })
+    }, 5000);
+  }
+
   return (
     <Context.Provider
       value={{
         state: state.state,
+        alertState: state.alertState,
         setState,
+        setAlert,
       }}
     >
       {props.children}

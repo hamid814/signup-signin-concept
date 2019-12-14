@@ -2,8 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
 
-import Container from './components/layout/Container';
 import Header from './components/layout/Header';
+import Alert from './components/layout/alert/Alert';
+import Container from './components/layout/Container';
 
 import State from './context/State';
 
@@ -15,6 +16,7 @@ function App() {
   return (
     <>
       <Header />
+      <Alert />
       <Container />
     </>
   );

@@ -2,6 +2,8 @@ import React, { useContext } from 'react'
 
 import Context from '../../../context/Context';
 
+import './alert.scss';
+
 const Alert = () => {
   const { alertState } = useContext(Context)
   
