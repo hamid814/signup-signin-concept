@@ -22,8 +22,6 @@ const Form = () => {
       data = SigninForm()
     }
 
-    console.log(state)
-    
     setTimeout(() => {
       setFormData(data)
     }, 500);
