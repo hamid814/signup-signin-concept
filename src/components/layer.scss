@@ -121,6 +121,32 @@
     color: #f4f4f4;
     cursor: pointer;
     margin-top: 22vh;
+
+    &.button-signin-anim {
+      animation: jhfskjvkshfv 1s ease-in-out;
+    }
+    
+    &.button-signup-anim {
+      color: red !important;
+    }
+  }
+}
+
+@keyframes jhfskjvkshfv {
+  0% {
+    width: 260px;
+  }
+  10% {
+    width: 260px;
+  }
+  50% {
+    width: 450px;    
+  }
+  90% {
+    width: 260px;
+  }
+  100% {
+    width: 260px;
   }
 }
 

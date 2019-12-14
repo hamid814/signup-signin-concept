@@ -16,10 +16,12 @@ const Layer = () => {
     }, 1000);
   }, [state])
 
-  const onbuttonClick = () => {
-    state === 'signin'
-      ? setState('signup')
-      : setState('signin')
+  const onButtonClick = () => {
+    if(!animating) {
+      state === 'signin'
+        ? setState('signup')
+        : setState('signin')
+    }
   }
 
   return (
@@ -74,7 +76,7 @@ const Layer = () => {
         
         </div>
       </div>
-      <button onClick={onbuttonClick} className={`${state}`}>
+      <button onClick={onButtonClick} className={`${animating && `button-${state}-anim`}`}>
         {
           state === 'signin'
             && 'sign up'
