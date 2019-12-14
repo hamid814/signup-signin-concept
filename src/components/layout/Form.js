@@ -19,6 +19,9 @@ const Form = () => {
       {
         SigninForm().text
       }
+      {
+        SigninForm().inputs
+      }
     </div>
   )
 }
