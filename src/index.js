@@ -10,7 +10,6 @@ import State from './context/State';
 
 import './index.css';
 import './styles/zindex.scss';
-import './styles/keyframes.css';
 
 function App() {
   return (
