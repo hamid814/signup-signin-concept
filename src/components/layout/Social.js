@@ -6,13 +6,13 @@ const Social = () => {
   return (
     <div id='social-icons'>
       <div className='icon fb'>
-        <i class="fa fa-facebook"></i>
+        <i className="fa fa-facebook"></i>
       </div>
       <div className='icon gp'>
-        <i class="fa fa-google-plus"></i>
+        <i className="fa fa-google-plus"></i>
       </div>
       <div className='icon li'>
-        <i class="fa fa-linkedin"></i>
+        <i className="fa fa-linkedin"></i>
       </div>
     </div>
   )

@@ -2,9 +2,7 @@
   position: absolute;
   top: 8px;
   left: 8px;
-  width: 170px;
   height: 60px;
-  z-index: 9999;
   background: #222;
   color: #eee;
   border-radius: 9999px;
@@ -14,22 +12,204 @@
     top: 7px;
     left: 33px;
   }
+  
+  &.shrink {
+    width: 170px;
+    
+    &:hover {
+      padding-left: 75px;
+      
+      .circle-half-one {
+        left: 7px;
+      }
+      
+      .circle-half-two {
+        left: 7px;
+      }
+    }
+    
+    .circle-half-one {
+      position: absolute;
+      top: 7px;
+      left: 117px;
+      width: 0;
+      height: 0;
+      background: transparent;
+      border: 23px solid #eee;
+      border-bottom-color: transparent;
+      border-right-color: transparent;
+      border-radius: 9999px;
+      transform: rotateZ(45deg);
+    }
+    
+    .circle-half-two {
+      position: absolute;
+      top: 7px;
+      left: 117px;
+      width: 0;
+      height: 0;
+      background: transparent;
+      border: 23px solid #eee;
+      border-top-color: transparent;
+      border-left-color: transparent;
+      border-radius: 9999px;
+      transform: rotateZ(45deg);
+    }
 
-  &:hover {
-    padding-left: 72px;
+    .half-one-text {
+      opacity: 0;
+    }
 
-    .circle {
-      right: 117px;
+    .half-two-text {
+      opacity: 0;
     }
   }
+    
+  &.expand {
+    width: 220px;
+    background: transparent;
+    color: transparent;
 
-  .circle {
-    width: 46px;
-    height: 46px;
-    background: #eee;
-    position: absolute;
+    .circle-half-one {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 0;
+      background: transparent;
+      border: 30px solid #f9d046;
+      z-index: 999;
+      border-bottom-color: transparent;
+      border-right-color: transparent;
+      border-radius: 9999px;
+      transform: rotateZ(-45deg);
+      animation: circleHalfOneAnim 1s ease-in;
+    }
+    
+    .half-one-text {
+      position: absolute;
+      top: 0;
+      left: 30px;
+      width: 80px;
+      height: 60px;
+      padding-top: 2px;
+      padding-right: 4px;
+      font-size: 20px;
+      overflow: hidden;
+      text-align: center;
+      color: #de636a;
+      background: #f9d046;
+      animation: textHalfOneAnim 1s ease-in;
+    }
+    
+    .circle-half-two {
+      position: absolute;
+      top: 0;
+      left: 160px;
+      width: 0;
+      height: 0;
+      background: transparent;
+      border: 30px solid #de636a;
+      z-index: 999;
+      border-top-color: transparent;
+      border-left-color: transparent;
+      border-radius: 9999px;
+      transform: rotateZ(-45deg);
+      animation: circleHalfTwoAnim 1s ease-in;
+    }
+    
+    .half-two-text {
+      position: absolute;
+      top: 0;
+      left: 110px;
+      width: 80px;
+      height: 60px;
+      font-size: 20px;
+      padding-top: 15px;
+      padding-left: 4px;
+      color: #f9d046;
+      background: #de636a;
+      overflow: hidden;
+      text-align: center;
+      animation: textHalfTwoAnim 1s ease-in;
+    }
+  }
+}
+
+@keyframes circleHalfOneAnim {
+  0% {
     top: 7px;
-    right: 7px;
-    border-radius: 9999px;
+    left: 7px;
+    transform: rotateZ(45deg);
+  }
+  30% {
+    top: 0px;
+    left: 80px;
+    transform: rotateZ(45deg);
+  }
+  50% {
+    top: 0px;
+    left: 80px;
+    transform: rotateZ(-45deg);
+  }
+  100% {
+    top: 0;
+    left: 0;
+    transform: rotateZ(-45deg);
+  }
+}
+
+@keyframes circleHalfTwoAnim {
+  0% {
+    top: 7px;
+    left: 7px;
+    transform: rotateZ(45deg);
+  }
+  30% {
+    top: 0px;
+    left: 80px;
+    transform: rotateZ(45deg);
+  }
+  50% {
+    top: 0px;
+    left: 80px;
+    transform: rotateZ(-45deg);
+  }
+  100% {
+    top: 0;
+    left: 160px;
+    transform: rotateZ(-45deg);
+  }
+}
+
+@keyframes textHalfOneAnim {
+  0% {
+    left: 110px;
+    width: 0;
+    padding-right: 0;
+  }
+  50% {
+    left: 110px;
+    width: 0;
+  }
+  100% {
+    left: 30px;
+    width: 80px;
+  }
+}
+
+@keyframes textHalfTwoAnim {
+  0% {
+    padding-left: 0;
+    left: 110px;
+    width: 0;
+  }
+  50% {
+    left: 110px;
+    width: 0;
+  }
+  100% {
+    left: 110px;
+    width: 80px;
   }
 }
