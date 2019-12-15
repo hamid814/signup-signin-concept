@@ -24,7 +24,7 @@ const Form = () => {
 
     setTimeout(() => {
       setFormData(data)
-    }, 500);
+    }, 470);
   }, [state])
 
   const onButtonClick = () => {
