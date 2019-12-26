@@ -51,7 +51,6 @@
     }
     
     .content {
-      // border: 1px solid orange;
       position: relative;
       margin-top: 34vh;
       
@@ -114,7 +113,6 @@
     font-size: 115%;
     background: transparent;
     border: 2px solid #f4f4f4;
-    // padding: 18px;
     text-align: center;
     letter-spacing: 2px;
     font-weight: 100;
@@ -126,15 +124,14 @@
     overflow: hidden;
 
     &.button-signin-anim {
-      animation: jhfskjvkshfv 1s ease-in-out;
+      animation: buttonSigninAnim 1s ease-in-out;
     }
     
     &.button-signup-anim {
-      animation: jhfskjvkshfv 1s ease-in-out;
+      animation: buttonSigninAnim 1s ease-in-out;
     }
 
     .text {
-      // border: 1px solid black;
       width: 260px;
       height: 26px;
       position: absolute;
@@ -161,19 +158,17 @@
       .signin-text {
         float: left;
         width: 80px;
-        // border: 1px solid red;
       }
       
       .signup-text {
         float: right;
         width: 80px;
-        // border: 1px solid red;
       }
     }
   }
 }
 
-@keyframes jhfskjvkshfv {
+@keyframes buttonSigninAnim {
   0% {
     width: 260px;
   }
