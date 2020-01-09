@@ -14,7 +14,7 @@ const Header = () => {
   }
 
   const onContactClick = () => {
-    expand && window.open('https://myportfolio.com/')
+    expand && window.open('https://hamid814.github.io/portfolio-app')
   }
 
   const onSELECTOClick = () => {
@@ -28,7 +28,7 @@ const Header = () => {
       
       </div>
       <div className='half-one-text' onClick={onContactClick}>
-        Contect Me
+        Contact Me
       </div>
       <div className='circle-half-two'>
       
